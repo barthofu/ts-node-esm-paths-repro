@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "build",
+    "rootDir": "src",
+    "strict": true,
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@utils": ["src/utils"]
+    }
+  },
+  "exclude": ["build", "node_modules"],
+
+  "ts-node": {
+		"require": ["tsconfig-paths/register"]
+	}
+}
